@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bundle Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Build Your Bundle</h1>
+    <p>Select <span id="requiredCount">3</span> items to complete your bundle</p>
+
+    <div class="progress-bar">
+      <div class="fill" id="progressFill"></div>
+    </div>
+
+    <div class="products">
+      <!-- Product Cards -->
+      <div class="card" data-id="1">
+        <img src="assets/p1.jpg" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>Price: ₹100</p>
+        <button onclick="toggleProduct(1)">Add</button>
+      </div>
+
+      <div class="card" data-id="2">
+        <img src="assets/p2.jpg" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>Price: ₹150</p>
+        <button onclick="toggleProduct(2)">Add</button>
+      </div>
+
+      <div class="card" data-id="3">
+        <img src="assets/p3.jpg" alt="Product 3">
+        <h3>Product 3</h3>
+        <p>Price: ₹200</p>
+        <button onclick="toggleProduct(3)">Add</button>
+      </div>
+
+      <div class="card" data-id="4">
+        <img src="assets/p4.jpg" alt="Product 4">
+        <h3>Product 4</h3>
+        <p>Price: ₹180</p>
+        <button onclick="toggleProduct(4)">Add</button>
+      </div>
+
+      <div class="card" data-id="5">
+        <img src="assets/p5.jpg" alt="Product 5">
+        <h3>Product 5</h3>
+        <p>Price: ₹400</p>
+        <button onclick="toggleProduct(5)">Add</button>
+      </div>
+
+      <div class="card" data-id="6">
+        <img src="assets/p6.jpg" alt="Product 6">
+        <h3>Product 6</h3>
+        <p>Price: ₹350</p>
+        <button onclick="toggleProduct(6)">Add</button>
+      </div>
+
+      <div class="card" data-id="7">
+        <img src="assets/p7.jpg" alt="Product 7">
+        <h3>Product 7</h3>
+        <p>Price: ₹220</p>
+        <button onclick="toggleProduct(7)">Add</button>
+      </div>
+    </div>
+
+    <div class="summary">
+      <p>Selected Items: <span id="selectedCount">0</span></p>
+      <p>Total Price: ₹<span id="totalPrice">0</span></p>
+      <button id="addToCart" disabled>Add to Cart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
